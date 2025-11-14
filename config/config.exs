@@ -1,10 +1,11 @@
 import Config
 
 config :phonex,
-  default_mask: "CVCCV-CVCVV-DDDDD"
+  default_mask: "CVCCV-CVCVV-DDDDD",
   blocklist: ~w[kakke kacke pupse pupsi pisse pippi dildo dicke dicki nutte
                  nigga digga nigro negro dumme dummi titte porno pussi cakka
                  fikka fakka fikki ficka facka ficki paedo tunte nazri ratte
                  tussi tusse bimbo dicka rotze fotze kotze russa getto cacke
                  bombe rasse naszi kacka narzi pissa]
+
 import_config "#{config_env()}.exs"

@@ -1,8 +1,8 @@
 defmodule Phonex do
-  @default_mask "CVCCV-CVCVV-DDDDD"
+  @default_mask Application.compile_env!(:phonex, :default_mask)
   @consts "bcdgklmnprstz"
   @vowels "aeiou"
-  @blocklist ~w[]
+  @blocklist Application.compile_env!(:phonex, :blocklist)
 
   @moduledoc ~S"""
   Generates a phonetically pronounced token with givn mask (or default mask)
