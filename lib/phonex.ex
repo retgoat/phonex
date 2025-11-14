@@ -103,8 +103,8 @@ defmodule Phonex do
     end
   end
 
-  def graphemes({:error, _} = e), do: e
-  def graphemes(mask), do: String.graphemes(mask)
+  defp graphemes({:error, _} = e), do: e
+  defp graphemes(mask), do: String.graphemes(mask)
 
   defp token_by_mask({:error, _} = e), do: e
 
