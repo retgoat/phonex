@@ -24,6 +24,10 @@ def deps do
 end
 ```
 
+### Configuration
+
+Check [config](config/config.exs) for possible options.
+
 ### Example
 
 ```elixir
